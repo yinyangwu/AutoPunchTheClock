@@ -46,7 +46,7 @@ public class AutoPunchTheClock {
                     } else {
                         try {
                             //第三步，如果满足打卡条件则执行打卡步骤
-                            System.out.println("当前已满足打卡要求");
+                            System.out.println("正在打卡...");
                             Process p1 = Runtime.getRuntime().exec("adb shell input tap 360 1216");
                             p1.waitFor();
                             Thread.sleep(3000);
@@ -59,11 +59,8 @@ public class AutoPunchTheClock {
                             Process p4 = Runtime.getRuntime().exec("adb shell input keyevent 4");
                             p4.waitFor();
                             Thread.sleep(3000);
-                            Process p5 = Runtime.getRuntime().exec("adb shell input keyevent 4");
+                            Process p5 = Runtime.getRuntime().exec("adb shell input tap 70 1220");
                             p5.waitFor();
-                            Thread.sleep(3000);
-                            Process p6 = Runtime.getRuntime().exec("adb shell input tap 70 1220");
-                            p6.waitFor();
                             System.out.println("打卡成功");
                             //第四步，打卡成功后重置新的打卡时间
                             long resetTime = System.currentTimeMillis();
@@ -77,6 +74,7 @@ public class AutoPunchTheClock {
                             System.out.println("已重置打卡时间：" + sdf.format(specifiedCalendar.getTime()));
                         } catch (IOException | InterruptedException e) {
                             e.printStackTrace();
+                            System.out.println("打卡失败");
                             break;
                         }
                     }
