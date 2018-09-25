@@ -30,7 +30,7 @@ public class AutoPunchTheClock {
                     specifiedCalendar.add(Calendar.DAY_OF_MONTH, 1);
                 }
                 int specifiedDay = specifiedCalendar.get(Calendar.DAY_OF_MONTH);
-                System.out.println("初始设定打卡时间:" + sdf.format(specifiedCalendar.getTime()));
+                System.out.println("初始设定打卡时间：" + sdf.format(specifiedCalendar.getTime()));
 
                 Calendar currentCalendar = Calendar.getInstance();
                 while (true) {
