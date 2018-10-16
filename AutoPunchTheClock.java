@@ -78,9 +78,9 @@ public class AutoPunchTheClock {
                             break;
                         }
                     }
-                    //第五步，睡眠10秒钟又循环判断当前时间
+                    //第五步，睡眠30秒钟又循环判断当前时间
                     try {
-                        Thread.sleep(10 * 1000);
+                        Thread.sleep(30 * 1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                         break;
