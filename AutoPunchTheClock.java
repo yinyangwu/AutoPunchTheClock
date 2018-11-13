@@ -59,8 +59,11 @@ public class AutoPunchTheClock {
                             Process p4 = Runtime.getRuntime().exec("adb shell input keyevent 4");
                             p4.waitFor();
                             Thread.sleep(3000);
-                            Process p5 = Runtime.getRuntime().exec("adb shell input tap 70 1220");
+                            Process p5 = Runtime.getRuntime().exec("adb shell input keyevent 4");
                             p5.waitFor();
+                            Thread.sleep(3000);
+                            Process p6 = Runtime.getRuntime().exec("adb shell input tap 70 1220");
+                            p6.waitFor();
                             System.out.println("打卡成功");
                             //第四步，打卡成功后重置新的打卡时间
                             long resetTime = System.currentTimeMillis();
