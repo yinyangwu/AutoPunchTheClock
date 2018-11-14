@@ -47,10 +47,10 @@ public class AutoPunchTheClock {
                         try {
                             //第三步，如果满足打卡条件则执行打卡步骤
                             System.out.println("正在打卡...");
-                            Process p1 = Runtime.getRuntime().exec("adb shell input tap 360 1216");
+                            Process p1 = Runtime.getRuntime().exec("adb shell input tap 360 1220");
                             p1.waitFor();
                             Thread.sleep(3000);
-                            Process p2 = Runtime.getRuntime().exec("adb shell input tap 270 842");
+                            Process p2 = Runtime.getRuntime().exec("adb shell input tap 270 875");
                             p2.waitFor();
                             Thread.sleep(10000);
                             Process p3 = Runtime.getRuntime().exec("adb shell input tap 360 525");
