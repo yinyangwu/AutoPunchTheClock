@@ -5,7 +5,7 @@ Java实现自动打卡程序 for 钉钉v4.5.10
 ------
 1，把手机的开发者模式和USB调试开关都打开，并且设置不锁定屏幕，再确保已连上电脑<br>
 2，把项目pull到本地，git clone https://github.com/yinyangwu/AutoPunchTheClock.git<br>
-3，下载钉钉APP，当前项目是用v4.5.10测试的，建议保持一致<br>
+3，下载钉钉APP，当前项目是用v4.5.10，手机分辨率720*1280测试的，建议保持一致<br>
 4，打开钉钉，登录成功后保持在主页面，对应底下的tab按钮是【消息】<br>
 5，打开命令面板，进入项目所在本地目录，执行java AutoPunchTheClock即可自动进行打卡
 
